@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="css/main.css">
-  
+
   <title>Frontend Mentor | Art gallery website</title>
 </head>
+
 <body>
+  <header>
+    <div class="hero-container">
+      <div class="bg-hero"></div>
+      <div class="hero-image">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset=" ./assets/desktop/image-hero@2x.jpg, ./assets/desktop/image-hero.jpg">
+          <source media="(min-width: 768px)" srcset="./assets/tablet/image-hero@2x.jpg, ./assets/tablet/image-hero.jpg">
+          <source media="./assets/mobile/image-hero@2x.jpg, ./assets/mobile/image-hero.jpg">
+          <img src="./assets/mobile/image-hero@2x.jpg" alt="Image Hero" class="image-hero">
+        </picture>
+      </div>
 
-  Modern Art Gallery
-
-  The arts in the collection of the Modern Art Gallery all started 
-  from a spark of inspiration. Will these pieces inspire you? Visit 
-  us and find out.
-
-  Our location
-
+      <div class="hero-content">
+        <div class="logo-container">
+          <img src="./assets/logo-dark.svg" alt="Modern Art Gallery Logo">
+        </div>
+        <p>
+          The arts in the collection of the Modern Art Gallery all started
+          from a spark of inspiration. Will these pieces inspire you? Visit
+          us and find out.
+        </p>
+        <a class="btn" href="./location.html">Our location <span class="arrow">&#12297;</span></a>
+        
+      </div>
+    </div>
+  </header>
   Your day at the gallery
 
-  Wander through our distinct collections and find new insights about 
+  Wander through our distinct collections and find new insights about
   our artists. Dive into the details of their creative process.
 
   Come &amp; be inspired
 
-  We’re excited to welcome you to our gallery and see how our collections 
+  We&apos;re excited to welcome you to our gallery and see how our collections
   influence you.
 
   Modern Art Gallery
 
-  The Modern Art Gallery is free to all visitors and open seven days a week 
+  The Modern Art Gallery is free to all visitors and open seven days a week
   from 8am to 9pm. Find us at 99 King Street, Newport, USA.
 </body>
+
 </html>

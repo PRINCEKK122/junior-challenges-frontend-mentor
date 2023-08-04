@@ -1,2 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Outfit:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
 body {
-  background-color: blue; }
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+  font-size: 1.8rem;
+  line-height: 1.5; }
+
+.btn {
+  font-family: "Big Shoulder Display", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #151515;
+  color: white; }
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-bottom: 12rem; }
+  .hero-container .bg-hero {
+    display: none; }
+  .hero-container .image-hero {
+    width: 100%;
+    mix-blend-mode: difference; }
+  .hero-container .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 0 1.6rem; }
+    .hero-container .hero-content .logo-container {
+      max-width: 34rem; }
+      .hero-container .hero-content .logo-container img {
+        width: 100%; }
+    .hero-container .hero-content a {
+      align-self: flex-start;
+      font-weight: 700;
+      padding: 2.4rem 3.2rem;
+      padding-right: 0;
+      font-family: "Big Shoulders Display", sans-serif;
+      transition: background-color 500ms; }
+      .hero-container .hero-content a .arrow {
+        transition: background-color 500ms;
+        padding: 2.7rem;
+        padding-right: 2rem;
+        background-color: #d5966c;
+        height: 100%;
+        margin-left: 3.5rem;
+        font-weight: normal; }
+      .hero-container .hero-content a:hover {
+        background-color: #d5966c; }
+        .hero-container .hero-content a:hover .arrow {
+          background-color: #151515; }
+
+@media only screen and (min-width: 1440px) {
+  .hero-container {
+    flex-direction: row;
+    max-width: 127.5rem;
+    border: 10px solid red;
+    gap: 0;
+    margin: 0 auto; }
+    .hero-container .bg-hero {
+      display: block;
+      background-color: #151515;
+      flex-basis: 45rem; } }
