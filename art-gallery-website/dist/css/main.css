@@ -41,25 +41,23 @@ body {
       max-width: 34rem; }
       .hero-container .hero-content .logo-container img {
         width: 100%; }
-    .hero-container .hero-content a {
+    .hero-container .hero-content div a {
       align-self: flex-start;
       font-weight: 700;
       padding: 2.4rem 3.2rem;
       padding-right: 0;
       font-family: "Big Shoulders Display", sans-serif;
       transition: background-color 500ms; }
-      .hero-container .hero-content a .arrow {
+      .hero-container .hero-content div a .arrow {
         transition: background-color 500ms;
-        padding: 2.68rem;
-        padding-right: 2rem;
-        padding-bottom: 2.63rem;
+        padding: 2.4rem;
         background-color: #d5966c;
         height: 100%;
         margin-left: 3.5rem;
         font-weight: normal; }
-      .hero-container .hero-content a:hover {
+      .hero-container .hero-content div a:hover {
         background-color: #d5966c; }
-        .hero-container .hero-content a:hover .arrow {
+        .hero-container .hero-content div a:hover .arrow {
           background-color: #151515; }
 
 @media only screen and (min-width: 768px) {
@@ -80,7 +78,8 @@ body {
         max-width: 40rem;
         gap: 4.8rem;
         position: relative;
-        left: -5rem; }
+        left: -5rem;
+        bottom: 5rem; }
         header .hero-container .hero-content .arrow {
           padding-top: 2.6rem; } }
 
@@ -104,7 +103,7 @@ body {
       header .hero-container .hero-content {
         align-items: center;
         position: static;
-        padding-bottom: 13rem; }
+        padding-bottom: 22rem; }
         header .hero-container .hero-content .logo-container {
           position: absolute;
           top: 18.9rem;
@@ -114,7 +113,9 @@ body {
           height: 17.6rem; }
           header .hero-container .hero-content .logo-container img {
             mix-blend-mode: difference; }
-        header .hero-container .hero-content p,
-        header .hero-container .hero-content a {
+        header .hero-container .hero-content p {
           position: relative;
-          left: -5rem; } }
+          left: -5rem; }
+        header .hero-container .hero-content div {
+          position: relative;
+          left: -12rem; } }
