@@ -28,6 +28,7 @@ h2 {
   color: white; }
 
 .hero-container {
+  border: 3px solid olive;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
@@ -105,7 +106,7 @@ h2 {
       header .hero-container .hero-content {
         align-items: center;
         position: static;
-        padding-bottom: 22rem; }
+        padding-bottom: 16.5rem; }
         header .hero-container .hero-content .logo-container {
           position: absolute;
           top: 18.9rem;
