@@ -15,28 +15,33 @@
   <header>
     <div class="hero-container">
       <div class="bg-hero"></div>
-      <div class="hero-image">
+      <div class="hero-image-container">
         <picture>
           <source media="(min-width: 1200px)"
-            srcset=" ./assets/desktop/image-hero@2x.jpg, ./assets/desktop/image-hero.jpg">
+            srcset="./assets/desktop/image-hero@2x.jpg, ./assets/desktop/image-hero.jpg">
           <source media="(min-width: 768px)" srcset="./assets/tablet/image-hero@2x.jpg, ./assets/tablet/image-hero.jpg">
-          <source media="./assets/mobile/image-hero@2x.jpg, ./assets/mobile/image-hero.jpg">
+          <source srcset="./assets/mobile/image-hero@2x.jpg, ./assets/mobile/image-hero.jpg">
           <img src="./assets/mobile/image-hero@2x.jpg" alt="Image Hero" class="image-hero">
         </picture>
       </div>
 
       <div class="hero-content">
         <div class="logo-container">
-          <img src="./assets/logo-dark.svg" alt="Modern Art Gallery Logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./assets/logo-light.svg">
+            <source srcset="./assets/logo-dark.svg">
+            <img src="./assets/logo-light.svg" alt="Modern Art Gallery Logo">
+          </picture>
         </div>
+        <!-- <div class="hero-inner-text"> -->
         <p>
           The arts in the collection of the Modern Art Gallery all started
           from a spark of inspiration. Will these pieces inspire you? Visit
           us and find out.
         </p>
         <a class="btn" href="./location.html">Our location <span class="arrow">&#12297;</span></a>
-        
       </div>
+      <!-- </div> -->
     </div>
   </header>
   Your day at the gallery

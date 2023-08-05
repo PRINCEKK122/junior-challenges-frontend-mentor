@@ -31,8 +31,7 @@ body {
   .hero-container .bg-hero {
     display: none; }
   .hero-container .image-hero {
-    width: 100%;
-    mix-blend-mode: difference; }
+    width: 100%; }
   .hero-container .hero-content {
     display: flex;
     flex-direction: column;
@@ -51,8 +50,9 @@ body {
       transition: background-color 500ms; }
       .hero-container .hero-content a .arrow {
         transition: background-color 500ms;
-        padding: 2.7rem;
+        padding: 2.68rem;
         padding-right: 2rem;
+        padding-bottom: 2.63rem;
         background-color: #d5966c;
         height: 100%;
         margin-left: 3.5rem;
@@ -62,14 +62,59 @@ body {
         .hero-container .hero-content a:hover .arrow {
           background-color: #151515; }
 
-@media only screen and (min-width: 1440px) {
-  .hero-container {
-    flex-direction: row;
-    max-width: 127.5rem;
-    border: 10px solid red;
-    gap: 0;
-    margin: 0 auto; }
-    .hero-container .bg-hero {
-      display: block;
-      background-color: #151515;
-      flex-basis: 45rem; } }
+@media only screen and (min-width: 768px) {
+  header {
+    margin-bottom: 12rem; }
+    header .hero-container {
+      flex-direction: row;
+      gap: 0;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto; }
+      header .hero-container .hero-image-container {
+        height: 70rem; }
+        header .hero-container .hero-image-container .image-hero {
+          height: 100%; }
+      header .hero-container .hero-content {
+        padding: 0;
+        max-width: 40rem;
+        gap: 4.8rem;
+        position: relative;
+        left: -5rem; }
+        header .hero-container .hero-content .arrow {
+          padding-top: 2.6rem; } }
+
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 2.2rem;
+    line-height: 1.45; }
+  header {
+    margin-bottom: 18rem; }
+    header .hero-container {
+      flex-direction: row;
+      max-width: 127.5rem;
+      position: relative; }
+      header .hero-container .bg-hero {
+        display: block;
+        background-color: #151515;
+        flex-basis: 45rem;
+        align-self: stretch; }
+      header .hero-container .hero-image-container {
+        height: 80rem; }
+      header .hero-container .hero-content {
+        align-items: center;
+        position: static;
+        padding-bottom: 13rem; }
+        header .hero-container .hero-content .logo-container {
+          position: absolute;
+          top: 18.9rem;
+          left: 15rem;
+          max-width: none;
+          width: 40rem;
+          height: 17.6rem; }
+          header .hero-container .hero-content .logo-container img {
+            mix-blend-mode: difference; }
+        header .hero-container .hero-content p,
+        header .hero-container .hero-content a {
+          position: relative;
+          left: -5rem; } }
