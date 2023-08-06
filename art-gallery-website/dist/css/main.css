@@ -81,6 +81,10 @@ main {
       line-height: 1;
       text-transform: uppercase;
       margin-bottom: 0.5rem; }
+  main .grid-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-bottom: 0.9rem; }
   main .inspired {
     background-color: #151515;
     color: white;
@@ -90,10 +94,6 @@ main {
       line-height: 1;
       text-transform: uppercase;
       margin-bottom: 2.4rem; }
-  main .grid-1 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin-bottom: 0.9rem; }
 
 footer {
   background-color: #151515;
@@ -133,7 +133,43 @@ footer {
         gap: 4.8rem;
         position: relative;
         left: -5rem;
-        bottom: 5rem; } }
+        bottom: 5rem; }
+  main {
+    max-width: 110rem;
+    padding: 0 4rem;
+    gap: 3rem;
+    margin: 0 auto;
+    grid-template-columns: 1fr 16rem 1fr;
+    grid-template-rows: 1fr auto 1fr; }
+    main .gallery {
+      margin-bottom: 0;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      align-self: center;
+      width: 35rem; }
+      main .gallery h1 {
+        font-size: 7rem;
+        margin-bottom: 3.2rem; }
+    main .grid-1 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      margin-bottom: 0; }
+    main .grid-2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 4; }
+      main .grid-2 img {
+        height: 100%; }
+    main .grid-3 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    main .inspired {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
 
 @media only screen and (min-width: 1200px) {
   body {
