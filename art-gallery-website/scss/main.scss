@@ -141,29 +141,34 @@ main {
 
 footer {
     background-color: $bg-almost-dark;
-    color: $bg-white;
-    padding: 4.8rem 3.2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 3.8rem;
     margin-top: 12rem;
 
-    .social-media-container {
+    .footer-container {
+        color: $bg-white;
+        padding: 4.8rem 3.2rem;
         display: flex;
-        gap: 2rem;
-
-        svg {
-            color: $bg-white;
-            cursor: pointer;
-            transition: color 300ms;
-        }
-
-        svg:hover {
-            color: $bg-gold;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.8rem;
+        max-width: 110rem;
+    
+        .social-media-container {
+            display: flex;
+            gap: 2rem;
+    
+            svg {
+                color: $bg-white;
+                cursor: pointer;
+                transition: color 300ms;
+            }
+    
+            svg:hover {
+                color: $bg-gold;
+            }
         }
     }
 }
+
 
 @media only screen and (min-width: 768px) {
     header {
@@ -198,9 +203,9 @@ footer {
     main {
         max-width: 110rem;
         padding: 0 4rem;
-        gap: 3rem;
+        gap: 1.1rem;
         margin: 0 auto;
-        grid-template-columns: 1fr 16rem 1fr;
+        grid-template-columns: 1fr 5rem 1fr;
         grid-template-rows: 1fr auto 1fr;
 
         .gallery {
@@ -208,10 +213,10 @@ footer {
             grid-row-start: 1;
             grid-row-end: 2;
             align-self: center;
-            width: 35rem;
+            width: 23rem;
 
             h1 {
-                font-size: 7rem;
+                font-size: 5rem;
                 margin-bottom: 3.2rem;
             }
         }
@@ -220,6 +225,10 @@ footer {
             grid-column-start: 2;
             grid-column-end: 4;
             margin-bottom: 0;
+
+            img {
+                height: 100%;
+            }
         }
 
         .grid-2 {
@@ -243,8 +252,33 @@ footer {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            h2 {
+                font-size: 5rem;
+            }
         }
     }
+    footer {
+        padding: 4rem 5.6rem;
+        .footer-container {
+            position: relative;
+            padding: 0;
+            margin: 0rem auto;
+            margin-bottom: 0;
+            flex-direction: row;
+
+            p {
+                flex-basis: 35rem;
+                margin-left: 6.5rem;
+            }
+
+            .social-media-container {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+    
 }
 
 @media only screen and (min-width: 1200px) {
@@ -303,6 +337,31 @@ footer {
                     left: -12rem;
                 }
             }
+        }
+    }
+
+    main {
+        gap: 3rem;
+        grid-template-columns: 1fr 16rem 1fr;
+
+        .gallery {
+            width: 35rem;
+
+            h1 {
+                font-size: 7rem;
+            }
+
+            .inspired h2 {
+                font-size: 6rem;
+            }
+        }
+    }
+
+    .footer-container {
+        font-size: 1.8rem !important;
+
+        p {
+            flex-basis: 43rem !important;
         }
     }
 }

@@ -97,22 +97,24 @@ main {
 
 footer {
   background-color: #151515;
-  color: white;
-  padding: 4.8rem 3.2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 3.8rem;
   margin-top: 12rem; }
-  footer .social-media-container {
+  footer .footer-container {
+    color: white;
+    padding: 4.8rem 3.2rem;
     display: flex;
-    gap: 2rem; }
-    footer .social-media-container svg {
-      color: white;
-      cursor: pointer;
-      transition: color 300ms; }
-    footer .social-media-container svg:hover {
-      color: #d5966c; }
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.8rem;
+    max-width: 110rem; }
+    footer .footer-container .social-media-container {
+      display: flex;
+      gap: 2rem; }
+      footer .footer-container .social-media-container svg {
+        color: white;
+        cursor: pointer;
+        transition: color 300ms; }
+      footer .footer-container .social-media-container svg:hover {
+        color: #d5966c; }
 
 @media only screen and (min-width: 768px) {
   header {
@@ -137,23 +139,25 @@ footer {
   main {
     max-width: 110rem;
     padding: 0 4rem;
-    gap: 3rem;
+    gap: 1.1rem;
     margin: 0 auto;
-    grid-template-columns: 1fr 16rem 1fr;
+    grid-template-columns: 1fr 5rem 1fr;
     grid-template-rows: 1fr auto 1fr; }
     main .gallery {
       margin-bottom: 0;
       grid-row-start: 1;
       grid-row-end: 2;
       align-self: center;
-      width: 35rem; }
+      width: 23rem; }
       main .gallery h1 {
-        font-size: 7rem;
+        font-size: 5rem;
         margin-bottom: 3.2rem; }
     main .grid-1 {
       grid-column-start: 2;
       grid-column-end: 4;
       margin-bottom: 0; }
+      main .grid-1 img {
+        height: 100%; }
     main .grid-2 {
       grid-column-start: 1;
       grid-column-end: 3;
@@ -169,7 +173,23 @@ footer {
     main .inspired {
       display: flex;
       flex-direction: column;
-      justify-content: center; } }
+      justify-content: center; }
+      main .inspired h2 {
+        font-size: 5rem; }
+  footer {
+    padding: 4rem 5.6rem; }
+    footer .footer-container {
+      position: relative;
+      padding: 0;
+      margin: 0rem auto;
+      margin-bottom: 0;
+      flex-direction: row; }
+      footer .footer-container p {
+        flex-basis: 35rem;
+        margin-left: 6.5rem; }
+      footer .footer-container .social-media-container {
+        position: absolute;
+        right: 0; } }
 
 @media only screen and (min-width: 1200px) {
   body {
@@ -207,4 +227,17 @@ footer {
           margin-bottom: 6.4rem; }
         header .hero-container .hero-content div {
           position: relative;
-          left: -12rem; } }
+          left: -12rem; }
+  main {
+    gap: 3rem;
+    grid-template-columns: 1fr 16rem 1fr; }
+    main .gallery {
+      width: 35rem; }
+      main .gallery h1 {
+        font-size: 7rem; }
+      main .gallery .inspired h2 {
+        font-size: 6rem; }
+  .footer-container {
+    font-size: 1.8rem !important; }
+    .footer-container p {
+      flex-basis: 43rem !important; } }
