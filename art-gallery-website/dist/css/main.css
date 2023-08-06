@@ -109,11 +109,10 @@ footer {
     footer .footer-container .social-media-container {
       display: flex;
       gap: 2rem; }
-      footer .footer-container .social-media-container svg {
+      footer .footer-container .social-media-container a {
         color: white;
-        cursor: pointer;
         transition: color 300ms; }
-      footer .footer-container .social-media-container svg:hover {
+      footer .footer-container .social-media-container a:hover {
         color: #d5966c; }
 
 @media only screen and (min-width: 768px) {
@@ -240,4 +239,5 @@ footer {
   .footer-container {
     font-size: 1.8rem !important; }
     .footer-container p {
-      flex-basis: 43rem !important; } }
+      flex-basis: 43rem !important;
+      margin-left: 14rem !important; } }

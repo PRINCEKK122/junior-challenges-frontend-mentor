@@ -156,13 +156,12 @@ footer {
             display: flex;
             gap: 2rem;
     
-            svg {
+            a {
                 color: $bg-white;
-                cursor: pointer;
                 transition: color 300ms;
             }
     
-            svg:hover {
+            a:hover {
                 color: $bg-gold;
             }
         }
@@ -258,6 +257,7 @@ footer {
             }
         }
     }
+
     footer {
         padding: 4rem 5.6rem;
         .footer-container {
@@ -288,7 +288,6 @@ footer {
     }
 
     header {
-        // height: 10rem;
         margin-bottom: 18rem;
 
         .hero-container {
@@ -362,6 +361,7 @@ footer {
 
         p {
             flex-basis: 43rem !important;
+            margin-left: 14rem !important;
         }
     }
 }
