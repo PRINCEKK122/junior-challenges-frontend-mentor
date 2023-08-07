@@ -191,8 +191,10 @@ footer.bg-gold {
         position: relative;
         left: -5rem;
         bottom: 5rem; }
-  .location-header div {
-    left: 3.9rem; }
+  .location-header {
+    margin-bottom: 0; }
+    .location-header div {
+      left: 3.9rem; }
   main {
     max-width: 110rem;
     padding: 0 4rem;
@@ -233,8 +235,22 @@ footer.bg-gold {
       justify-content: center; }
       main .inspired h2 {
         font-size: 5rem; }
+  .main-location {
+    max-width: none;
+    margin: 0; }
+    .main-location .location-inner-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 110rem;
+      margin: 0 auto; }
+      .main-location .location-inner-container h1 {
+        width: 22.3rem;
+        line-height: 1; }
+      .main-location .location-inner-container .address {
+        flex-basis: 40rem; }
   footer {
-    padding: 4rem 5.6rem; }
+    padding: 4rem 5.6rem;
+    font-size: 1.6rem; }
     footer .footer-container {
       position: relative;
       padding: 0;
@@ -296,6 +312,11 @@ footer.bg-gold {
         font-size: 7rem; }
       main .gallery .inspired h2 {
         font-size: 6rem; }
+  main.main-location {
+    max-width: none;
+    margin-top: -0.8rem; }
+    main.main-location .address {
+      flex-basis: 54rem !important; }
   .footer-container {
     font-size: 1.8rem !important; }
     .footer-container p {

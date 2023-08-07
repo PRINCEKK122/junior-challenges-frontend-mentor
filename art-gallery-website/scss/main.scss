@@ -255,6 +255,7 @@ footer.bg-gold {
     margin-top: 0;
 }
 
+// Tablet devices
 @media only screen and (min-width: 768px) {
     header {
         margin-bottom: 12rem;
@@ -286,6 +287,8 @@ footer.bg-gold {
     }
 
     .location-header {
+        margin-bottom: 0;
+
         div {
             left: 3.9rem;
         }
@@ -351,8 +354,31 @@ footer.bg-gold {
         }
     }
 
+    // Address styles
+    .main-location {
+        max-width: none;
+        margin: 0;
+
+        .location-inner-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 110rem;
+            margin: 0 auto;
+
+            h1 {
+                width: 22.3rem;
+                line-height: 1;
+            }
+    
+            .address {
+                flex-basis: 40rem;
+            }
+        }
+    }
+    
     footer {
         padding: 4rem 5.6rem;
+        font-size: 1.6rem;
 
         .footer-container {
             position: relative;
@@ -453,6 +479,15 @@ footer.bg-gold {
             .inspired h2 {
                 font-size: 6rem;
             }
+        }
+    }
+
+    main.main-location {
+        max-width: none;
+        margin-top: -0.8rem;
+
+        .address {
+            flex-basis: 54rem !important;
         }
     }
 
