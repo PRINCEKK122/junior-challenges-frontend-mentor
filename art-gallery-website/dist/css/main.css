@@ -16,11 +16,11 @@ body {
   line-height: 1.5; }
 
 h1,
-h2 {
+h2,
+a {
   font-family: "Big Shoulders Display"; }
 
 .btn {
-  font-family: "Big Shoulder Display", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -29,6 +29,24 @@ h2 {
 
 .w-100 {
   width: 100%; }
+
+.bg-dark {
+  background-color: #151515;
+  color: white; }
+  .bg-dark a {
+    color: inherit;
+    transition: color 500ms; }
+    .bg-dark a:hover {
+      color: #d5966c; }
+
+.bg-gold {
+  background-color: #d5966c;
+  color: #151515; }
+  .bg-gold a {
+    color: inherit;
+    transition: color 500ms; }
+    .bg-gold a:hover {
+      color: white; }
 
 .hero-container {
   display: flex;
@@ -55,9 +73,8 @@ h2 {
         font-weight: 700;
         padding: 2.4rem 3.2rem;
         padding-right: 0;
-        font-family: "Big Shoulders Display", sans-serif;
         transition: background-color 500ms; }
-        .hero-container .hero-content div a .arrow {
+        .hero-container .hero-content div a .arrow-right {
           transition: background-color 500ms;
           padding: 2.4rem;
           background-color: #d5966c;
@@ -66,7 +83,7 @@ h2 {
           font-weight: normal; }
         .hero-container .hero-content div a:hover {
           background-color: #d5966c; }
-          .hero-container .hero-content div a:hover .arrow {
+          .hero-container .hero-content div a:hover .arrow-right {
             background-color: #151515; }
 
 main {
@@ -96,10 +113,8 @@ main {
       margin-bottom: 2.4rem; }
 
 footer {
-  background-color: #151515;
   margin-top: 12rem; }
   footer .footer-container {
-    color: white;
     padding: 4.8rem 3.2rem;
     display: flex;
     flex-direction: column;
@@ -109,11 +124,52 @@ footer {
     footer .footer-container .social-media-container {
       display: flex;
       gap: 2rem; }
-      footer .footer-container .social-media-container a {
-        color: white;
-        transition: color 300ms; }
-      footer .footer-container .social-media-container a:hover {
-        color: #d5966c; }
+
+.location-header {
+  position: relative; }
+  .location-header picture {
+    width: 100%; }
+    .location-header picture img {
+      width: 100%; }
+  .location-header div {
+    position: absolute;
+    top: 1.7rem; }
+    .location-header div a {
+      padding: 2.4rem 3.2rem;
+      padding-left: 0;
+      transition: background-color 500ms; }
+      .location-header div a .arrow-left {
+        padding: 2.4rem;
+        background-color: #d5966c;
+        margin-right: 3.2rem;
+        transition: background-color 500ms; }
+      .location-header div a:hover {
+        background-color: #d5966c; }
+        .location-header div a:hover .arrow-left {
+          background-color: #151515; }
+
+main.main-location {
+  padding: 4.8rem 1.6rem 5.6rem;
+  margin: 0;
+  margin-top: -0.7rem;
+  display: block; }
+  main.main-location ul {
+    list-style: none;
+    margin-bottom: 2rem; }
+  main.main-location h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: 2rem; }
+  main.main-location li:first-child {
+    color: #d5966c;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: "Big Shoulders Display", sans-serif;
+    margin-bottom: 2rem; }
+
+footer.bg-gold {
+  margin-top: 0; }
 
 @media only screen and (min-width: 768px) {
   header {
@@ -135,6 +191,8 @@ footer {
         position: relative;
         left: -5rem;
         bottom: 5rem; }
+  .location-header div {
+    left: 3.9rem; }
   main {
     max-width: 110rem;
     padding: 0 4rem;
@@ -214,7 +272,7 @@ footer {
         header .hero-container .hero-content .logo-container {
           position: absolute;
           top: 18.9rem;
-          left: 15rem;
+          left: 14.8rem;
           max-width: none;
           width: 40rem;
           height: 17.6rem; }
@@ -227,6 +285,8 @@ footer {
         header .hero-container .hero-content div {
           position: relative;
           left: -12rem; }
+  .location-header div {
+    left: 15.6rem; }
   main {
     gap: 3rem;
     grid-template-columns: 1fr 16rem 1fr; }
