@@ -1,0 +1,504 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Outfit:wght@300&display=swap');
+
+// Basic Styles
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+a {
+    font-family: "Big Shoulders Display";
+}
+
+// Utilities
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: $bg-almost-dark;
+    color: $bg-white;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.bg-dark {
+    background-color: $bg-almost-dark;
+    color: $bg-white;
+
+    a {
+        color: inherit;
+        transition: color 500ms;
+
+        &:hover {
+            color: $bg-gold;
+        }
+    }
+}
+
+.bg-gold {
+    background-color: $bg-gold;
+    color: $bg-almost-dark;
+
+    a {
+        color: inherit;
+        transition: color 500ms;
+
+        &:hover {
+            color: $bg-white;
+        }
+    }
+}
+
+// Header Styles
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-bottom: 12rem;
+
+    .bg-hero {
+        display: none;
+    }
+
+    .image-hero {
+        width: 100%;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        padding: 0 1.6rem;
+
+        .logo-container {
+            max-width: 34rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        div {
+            margin-top: 1rem;
+
+            a {
+                align-self: flex-start;
+                font-weight: 700;
+                padding: 2.4rem 3.2rem;
+                padding-right: 0;
+                transition: background-color 500ms;
+
+                .arrow-right {
+                    transition: background-color 500ms;
+                    padding: 2.4rem;
+                    background-color: $bg-gold;
+                    height: 100%;
+                    margin-left: 3.5rem;
+                    font-weight: normal;
+                }
+
+                &:hover {
+                    background-color: $bg-gold;
+
+                    .arrow-right {
+                        background-color: $bg-almost-dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Main Styles
+main {
+    display: grid;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    gap: 1.6rem;
+
+    .gallery {
+        margin-bottom: 3.2rem;
+
+        h1 {
+            font-size: 6rem;
+            line-height: 1;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .grid-1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-bottom: 0.9rem;
+    }
+
+    .inspired {
+        background-color: $bg-almost-dark;
+        color: $bg-white;
+        padding: 4.8rem 2.4rem;
+
+        h2 {
+            font-size: 6rem;
+            line-height: 1;
+            text-transform: uppercase;
+            margin-bottom: 2.4rem;
+        }
+    }
+}
+
+
+// Footer styles
+footer {
+    margin-top: 12rem;
+
+    .footer-container {
+        padding: 4.8rem 3.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.8rem;
+        max-width: 110rem;
+
+        .social-media-container {
+            display: flex;
+            gap: 2rem;
+        }
+    }
+}
+
+// Styles for Location.html
+.location-header {
+    position: relative;
+
+    picture {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+    div {
+        position: absolute;
+        top: 1.7rem;
+
+        a {
+            padding: 2.4rem 3.2rem;
+            padding-left: 0;
+            transition: background-color 500ms;
+
+            .arrow-left {
+                padding: 2.4rem;
+                background-color: $bg-gold;
+                margin-right: 3.2rem;
+                transition: background-color 500ms;
+            }
+
+            &:hover {
+                background-color: $bg-gold;
+
+                .arrow-left {
+                    background-color: $bg-almost-dark;
+                }
+            }
+        }
+    }
+}
+
+main.main-location {
+    padding: 4.8rem 1.6rem 5.6rem;
+    margin: 0;
+    margin-top: -0.7rem;
+    display: block;
+
+    ul {
+        list-style: none;
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    li:first-child {
+        color: $bg-gold;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 3rem;
+        font-family: "Big Shoulders Display", sans-serif;
+        margin-bottom: 2rem;
+    }
+}
+
+footer.bg-gold {
+    margin-top: 0;
+}
+
+// Tablet devices
+@media only screen and (min-width: 768px) {
+    header {
+        margin-bottom: 12rem;
+
+        .hero-container {
+            flex-direction: row;
+            gap: 0;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+
+            .hero-image-container {
+                height: 70rem;
+
+                .image-hero {
+                    height: 100%;
+                }
+            }
+
+            .hero-content {
+                padding: 0;
+                max-width: 40rem;
+                gap: 4.8rem;
+                position: relative;
+                left: -5rem;
+                bottom: 5rem;
+            }
+        }
+    }
+
+    .location-header {
+        margin-bottom: 0;
+
+        div {
+            left: 3.9rem;
+        }
+    }
+
+    main {
+        max-width: 110rem;
+        padding: 0 4rem;
+        gap: 1.1rem;
+        margin: 0 auto;
+        grid-template-columns: 1fr 5rem 1fr;
+        grid-template-rows: 1fr auto 1fr;
+
+        .gallery {
+            margin-bottom: 0;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            align-self: center;
+            width: 23rem;
+
+            h1 {
+                font-size: 5rem;
+                margin-bottom: 3.2rem;
+            }
+        }
+
+        .grid-1 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            margin-bottom: 0;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .grid-2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .grid-3 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .inspired {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2 {
+                font-size: 5rem;
+            }
+        }
+    }
+
+    // Address styles
+    .main-location {
+        max-width: none;
+        margin: 0;
+
+        .location-inner-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 110rem;
+            margin: 0 auto;
+
+            h1 {
+                width: 22.3rem;
+                line-height: 1;
+            }
+    
+            .address {
+                flex-basis: 40rem;
+            }
+        }
+    }
+    
+    footer {
+        padding: 4rem 5.6rem;
+        font-size: 1.6rem;
+
+        .footer-container {
+            position: relative;
+            padding: 0;
+            margin: 0rem auto;
+            margin-bottom: 0;
+            flex-direction: row;
+
+            p {
+                flex-basis: 35rem;
+                margin-left: 6.5rem;
+            }
+
+            .social-media-container {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 2.2rem;
+        line-height: 1.45;
+    }
+
+    header {
+        margin-bottom: 18rem;
+
+        .hero-container {
+            flex-direction: row;
+            max-width: 127.5rem;
+            position: relative;
+
+
+            .bg-hero {
+                display: block;
+                background-color: $bg-almost-dark;
+                flex-basis: 45rem;
+                align-self: stretch;
+            }
+
+            .hero-image-container {
+                height: 80rem;
+            }
+
+            .hero-content {
+                align-items: center;
+                position: static;
+                padding-bottom: 16.5rem;
+
+                .logo-container {
+                    position: absolute;
+                    top: 18.9rem;
+                    left: 14.8rem;
+                    max-width: none;
+                    width: 40rem;
+                    height: 17.6rem;
+
+                    img {
+                        mix-blend-mode: difference;
+                    }
+                }
+
+                p {
+                    position: relative;
+                    left: -5rem;
+                    margin-bottom: 6.4rem;
+                }
+
+                div {
+                    position: relative;
+                    left: -12rem;
+                }
+            }
+        }
+    }
+
+    .location-header {
+        div {
+            left: 15.6rem;
+        }
+    }
+
+    main {
+        gap: 3rem;
+        grid-template-columns: 1fr 16rem 1fr;
+
+        .gallery {
+            width: 35rem;
+
+            h1 {
+                font-size: 7rem;
+            }
+
+            .inspired h2 {
+                font-size: 6rem;
+            }
+        }
+    }
+
+    main.main-location {
+        max-width: none;
+        margin-top: -0.8rem;
+
+        .address {
+            flex-basis: 54rem !important;
+        }
+    }
+
+    .footer-container {
+        font-size: 1.8rem !important;
+
+        p {
+            flex-basis: 43rem !important;
+            margin-left: 14rem !important;
+        }
+    }
+}
+
+

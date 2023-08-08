@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Outfit:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+  font-size: 1.8rem;
+  line-height: 1.5; }
+
+h1,
+h2,
+a {
+  font-family: "Big Shoulders Display"; }
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #151515;
+  color: white; }
+
+.w-100 {
+  width: 100%; }
+
+.bg-dark {
+  background-color: #151515;
+  color: white; }
+  .bg-dark a {
+    color: inherit;
+    transition: color 500ms; }
+    .bg-dark a:hover {
+      color: #d5966c; }
+
+.bg-gold {
+  background-color: #d5966c;
+  color: #151515; }
+  .bg-gold a {
+    color: inherit;
+    transition: color 500ms; }
+    .bg-gold a:hover {
+      color: white; }
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-bottom: 12rem; }
+  .hero-container .bg-hero {
+    display: none; }
+  .hero-container .image-hero {
+    width: 100%; }
+  .hero-container .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 0 1.6rem; }
+    .hero-container .hero-content .logo-container {
+      max-width: 34rem; }
+      .hero-container .hero-content .logo-container img {
+        width: 100%; }
+    .hero-container .hero-content div {
+      margin-top: 1rem; }
+      .hero-container .hero-content div a {
+        align-self: flex-start;
+        font-weight: 700;
+        padding: 2.4rem 3.2rem;
+        padding-right: 0;
+        transition: background-color 500ms; }
+        .hero-container .hero-content div a .arrow-right {
+          transition: background-color 500ms;
+          padding: 2.4rem;
+          background-color: #d5966c;
+          height: 100%;
+          margin-left: 3.5rem;
+          font-weight: normal; }
+        .hero-container .hero-content div a:hover {
+          background-color: #d5966c; }
+          .hero-container .hero-content div a:hover .arrow-right {
+            background-color: #151515; }
+
+main {
+  display: grid;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  gap: 1.6rem; }
+  main .gallery {
+    margin-bottom: 3.2rem; }
+    main .gallery h1 {
+      font-size: 6rem;
+      line-height: 1;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem; }
+  main .grid-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-bottom: 0.9rem; }
+  main .inspired {
+    background-color: #151515;
+    color: white;
+    padding: 4.8rem 2.4rem; }
+    main .inspired h2 {
+      font-size: 6rem;
+      line-height: 1;
+      text-transform: uppercase;
+      margin-bottom: 2.4rem; }
+
+footer {
+  margin-top: 12rem; }
+  footer .footer-container {
+    padding: 4.8rem 3.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.8rem;
+    max-width: 110rem; }
+    footer .footer-container .social-media-container {
+      display: flex;
+      gap: 2rem; }
+
+.location-header {
+  position: relative; }
+  .location-header picture {
+    width: 100%; }
+    .location-header picture img {
+      width: 100%; }
+  .location-header div {
+    position: absolute;
+    top: 1.7rem; }
+    .location-header div a {
+      padding: 2.4rem 3.2rem;
+      padding-left: 0;
+      transition: background-color 500ms; }
+      .location-header div a .arrow-left {
+        padding: 2.4rem;
+        background-color: #d5966c;
+        margin-right: 3.2rem;
+        transition: background-color 500ms; }
+      .location-header div a:hover {
+        background-color: #d5966c; }
+        .location-header div a:hover .arrow-left {
+          background-color: #151515; }
+
+main.main-location {
+  padding: 4.8rem 1.6rem 5.6rem;
+  margin: 0;
+  margin-top: -0.7rem;
+  display: block; }
+  main.main-location ul {
+    list-style: none;
+    margin-bottom: 2rem; }
+  main.main-location h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: 2rem; }
+  main.main-location li:first-child {
+    color: #d5966c;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: "Big Shoulders Display", sans-serif;
+    margin-bottom: 2rem; }
+
+footer.bg-gold {
+  margin-top: 0; }
+
+@media only screen and (min-width: 768px) {
+  header {
+    margin-bottom: 12rem; }
+    header .hero-container {
+      flex-direction: row;
+      gap: 0;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto; }
+      header .hero-container .hero-image-container {
+        height: 70rem; }
+        header .hero-container .hero-image-container .image-hero {
+          height: 100%; }
+      header .hero-container .hero-content {
+        padding: 0;
+        max-width: 40rem;
+        gap: 4.8rem;
+        position: relative;
+        left: -5rem;
+        bottom: 5rem; }
+  .location-header {
+    margin-bottom: 0; }
+    .location-header div {
+      left: 3.9rem; }
+  main {
+    max-width: 110rem;
+    padding: 0 4rem;
+    gap: 1.1rem;
+    margin: 0 auto;
+    grid-template-columns: 1fr 5rem 1fr;
+    grid-template-rows: 1fr auto 1fr; }
+    main .gallery {
+      margin-bottom: 0;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      align-self: center;
+      width: 23rem; }
+      main .gallery h1 {
+        font-size: 5rem;
+        margin-bottom: 3.2rem; }
+    main .grid-1 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      margin-bottom: 0; }
+      main .grid-1 img {
+        height: 100%; }
+    main .grid-2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 4; }
+      main .grid-2 img {
+        height: 100%; }
+    main .grid-3 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    main .inspired {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      main .inspired h2 {
+        font-size: 5rem; }
+  .main-location {
+    max-width: none;
+    margin: 0; }
+    .main-location .location-inner-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 110rem;
+      margin: 0 auto; }
+      .main-location .location-inner-container h1 {
+        width: 22.3rem;
+        line-height: 1; }
+      .main-location .location-inner-container .address {
+        flex-basis: 40rem; }
+  footer {
+    padding: 4rem 5.6rem;
+    font-size: 1.6rem; }
+    footer .footer-container {
+      position: relative;
+      padding: 0;
+      margin: 0rem auto;
+      margin-bottom: 0;
+      flex-direction: row; }
+      footer .footer-container p {
+        flex-basis: 35rem;
+        margin-left: 6.5rem; }
+      footer .footer-container .social-media-container {
+        position: absolute;
+        right: 0; } }
+
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 2.2rem;
+    line-height: 1.45; }
+  header {
+    margin-bottom: 18rem; }
+    header .hero-container {
+      flex-direction: row;
+      max-width: 127.5rem;
+      position: relative; }
+      header .hero-container .bg-hero {
+        display: block;
+        background-color: #151515;
+        flex-basis: 45rem;
+        align-self: stretch; }
+      header .hero-container .hero-image-container {
+        height: 80rem; }
+      header .hero-container .hero-content {
+        align-items: center;
+        position: static;
+        padding-bottom: 16.5rem; }
+        header .hero-container .hero-content .logo-container {
+          position: absolute;
+          top: 18.9rem;
+          left: 14.8rem;
+          max-width: none;
+          width: 40rem;
+          height: 17.6rem; }
+          header .hero-container .hero-content .logo-container img {
+            mix-blend-mode: difference; }
+        header .hero-container .hero-content p {
+          position: relative;
+          left: -5rem;
+          margin-bottom: 6.4rem; }
+        header .hero-container .hero-content div {
+          position: relative;
+          left: -12rem; }
+  .location-header div {
+    left: 15.6rem; }
+  main {
+    gap: 3rem;
+    grid-template-columns: 1fr 16rem 1fr; }
+    main .gallery {
+      width: 35rem; }
+      main .gallery h1 {
+        font-size: 7rem; }
+      main .gallery .inspired h2 {
+        font-size: 6rem; }
+  main.main-location {
+    max-width: none;
+    margin-top: -0.8rem; }
+    main.main-location .address {
+      flex-basis: 54rem !important; }
+  .footer-container {
+    font-size: 1.8rem !important; }
+    .footer-container p {
+      flex-basis: 43rem !important;
+      margin-left: 14rem !important; } }
