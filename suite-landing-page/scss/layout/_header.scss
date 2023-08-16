@@ -1,0 +1,40 @@
+@use "../util" as u;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2.4rem 1.6rem;
+  max-width: 111rem;
+
+  @include u.breakpoint(medium) {
+    margin: 4rem;
+  }
+
+  @include u.breakpoint(large) {
+    margin: 0 auto;
+    margin-top: 5rem;
+    border: 4px solid u.$linear-gradient-1;
+  }
+
+  img {
+    width: 8.1rem;
+  }
+
+  a {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.14px;
+    border: 2px solid u.$dark-blue;
+    padding: 1.2rem 1.65rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    color: u.$dark-blue;
+    transition: all 300ms;
+
+    &:hover {
+      color: u.$cream-white;
+      background-color: u.$dark-blue;
+    }
+  }
+}

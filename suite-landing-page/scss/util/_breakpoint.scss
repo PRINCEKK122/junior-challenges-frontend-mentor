@@ -1,6 +1,6 @@
 $breakpoint-up: (
-  "medium": 76.8em,
-  "large": 144em
+  "medium": 768px,
+  "large": 1440px
 );
 
 @mixin breakpoint($size) {
