@@ -1,0 +1,62 @@
+@use "../util" as u;
+
+main section:not(:last-child) {
+  &.hero {
+    max-width: 111rem;
+    margin: 0 auto;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    .hero__content {
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+      border: 1px solid blue;
+      max-width: 50.3rem;
+
+      p {
+        color: u.$grey;
+      }
+    }
+
+    h1 {
+      font-size: 3.8rem;
+      line-height: 1.143;
+      letter-spacing: -0.78px;
+      font-weight: 400;
+      
+
+      span {
+        font-weight: 700;
+        &.decorate-text {
+          display: inline-block;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: -3rem;
+            height: 60%;
+            width: 100%;
+            display: inline-block;
+            background-image: url("../assets/pattern-curved-line-1.svg");            
+            background-position: top;
+            background-size: cover;
+          }
+        }
+      }
+    }
+
+    @include u.breakpoint(medium) {
+      margin-left: 4rem;
+      margin-right: 4rem;
+    }
+
+    @include u.breakpoint(large) {
+      margin: 0 auto;
+    }
+  }
+}
