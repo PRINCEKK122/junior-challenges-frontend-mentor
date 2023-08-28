@@ -1,0 +1,11 @@
+@use "../utils" as u;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: u.$font-medium, sans-serif;
+  background-color: u.$bg-primary;
+  color: u.$text-primary-clr;
+}
