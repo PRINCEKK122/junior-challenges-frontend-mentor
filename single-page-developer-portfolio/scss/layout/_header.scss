@@ -1,0 +1,36 @@
+@use "../utils" as u;
+
+.header {
+  margin-top: 20px;
+
+  .header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 25px;
+
+    @include u.breakpoint(medium) {
+      justify-content: flex-start;
+    }
+
+    .header__home {
+      font-size: 2.4rem;
+      transition: all var(--trans);
+      flex: 1 0 100%; 
+      text-align: center;
+      margin-right: auto;
+      // display: block;
+    
+      @include u.breakpoint(medium) {
+        font-size: 3.2rem;
+        text-align: left;
+        flex: 0;
+      }
+    }
+
+    .header__social svg {
+        display: block;      
+    }
+  }
+}

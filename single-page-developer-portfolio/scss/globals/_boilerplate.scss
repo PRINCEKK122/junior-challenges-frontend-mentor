@@ -1,5 +1,9 @@
 @use "../utils" as u;
 
+:root {
+  --trans: 300ms ease-in-out;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -7,5 +11,7 @@ html {
 body {
   font-family: u.$font-medium, sans-serif;
   background-color: u.$bg-primary;
-  color: u.$text-primary-clr;
+  color: u.$text-primary;
+  font-size: u.$fs-18;
+  line-height: 1.56;
 }

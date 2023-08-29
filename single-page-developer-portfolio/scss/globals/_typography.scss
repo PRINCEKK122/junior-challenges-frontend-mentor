@@ -1,0 +1,19 @@
+@use "../utils" as u;
+
+a {
+  color: u.$text-primary;
+  text-decoration: none;
+  transition: color var(--trans);
+}
+
+svg path {
+  transition: all var(--trans);
+}
+
+a:hover {
+  color: u.$accent;
+}
+
+svg:hover path {
+  fill: u.$accent;
+}
