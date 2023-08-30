@@ -49,9 +49,23 @@
   </header>
 
   <main id="main">
-    <div class="wrapper">
-      <h1>Nice to meet you! I'm Adam Keyes.</h1>
-    </div>
+    <section class="hero">
+      <div class="hero__wrapper wrapper">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./assets/images/image-profile-desktop.webp">
+          <source media="(min-width: 768px)" srcset="./assets/images/image-profile-tablet.webp">
+          <img src="./assets/images/image-profile-mobile.webp" alt="Image of Adam Keyes" class="hero__image" width="174" height="383">
+        </picture>
+        <div class="hero__text">
+          <h1 class="hero__headline">Nice to meet you! I'm <span>Adam Keyes</span>.</h1>
+          <p class="hero__description">
+            Based in the UK, I'm a front-end developer passionate about
+            building accessible web apps that users love.
+          </p>
+          <a href="#" class="hero__link underline">Contact me</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -60,10 +74,9 @@
 
 
 
-  Based in the UK, I'm a front-end developer passionate about
-  building accessible web apps that users love.
+  
 
-  Contact me
+  
 
   HTML
   4 Years Experience

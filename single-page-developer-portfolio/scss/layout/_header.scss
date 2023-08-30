@@ -12,15 +12,16 @@
 
     @include u.breakpoint(medium) {
       justify-content: flex-start;
+      gap: 32px;
     }
 
     .header__home {
       font-size: 2.4rem;
       transition: all var(--trans);
-      flex: 1 0 100%; 
+      flex: 1 0 100%;
       text-align: center;
       margin-right: auto;
-      // display: block;
+      line-height: 1;
     
       @include u.breakpoint(medium) {
         font-size: 3.2rem;
@@ -30,7 +31,7 @@
     }
 
     .header__social svg {
-        display: block;      
+        display: block;
     }
   }
 }

@@ -4,7 +4,6 @@
   width: calc(100% - 3.2rem);
   max-width: 111rem;
   margin: 0 auto;
-  border: 2px solid olive;
 
   @include u.breakpoint(medium) {
     width: calc(100% - 6rem);

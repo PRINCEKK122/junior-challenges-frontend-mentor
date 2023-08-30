@@ -1,0 +1,26 @@
+@use "../utils" as u;
+
+.hero {
+  .hero__wrapper {
+    
+    .hero__image {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .hero__text {
+      text-align: center;
+      // position: relative;
+      margin-top: 335px;
+
+      .hero__description {
+        color: u.$text-secondary;
+        font-size: u.$fs-16;
+        line-height: 1.625;
+      }
+    }
+  }
+
+}
